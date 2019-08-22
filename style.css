@@ -1,0 +1,1976 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Ubuntu;
+}
+
+button {
+      border: none;    
+}
+
+
+li {
+    list-style: none;
+}
+
+body {
+    max-width: 1920px;
+    line-height: 1.4
+}
+
+
+/*End navigation*/
+/*Modal1*/
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    background-color: rgba(0, 0, 0, .6);
+    display: none;
+    z-index: 100;
+}
+#modal .modal-content {
+    background-color: #fff;
+    max-width: 463px;
+    height: 413px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    padding: 24px 55px 54px 50px;
+}
+
+#modal .modal-content h2 {
+    color: #3E3E3E;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.03em;
+}
+
+#modal .modal-content p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 16px;
+      color: #3E3E3E;
+}
+
+#modal .modal-content input {
+    width: 100%;
+    padding-bottom: 6px;
+    border: none;
+    border-bottom: 1px solid #A0A0A0;
+    font-family: Gilroy-Regular; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 14px;
+    color: #A6A6A6;
+    margin-bottom: 28px;
+    outline: none;
+    text-align: center;
+}
+
+#modal .modal-content button {
+    background-color: #CB2F2C;
+    font-size: 100%;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    width: 346px;
+    height: 61px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+#modal .modal-content .do-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: -35px;
+    right: -30px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.zoom {
+    animation: zoom 0.5s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 760px) {
+
+#modal .modal-content input {
+    width: 124%;
+}
+
+#modal .modal-content {
+            top: 105px;
+
+}
+}
+
+
+@media screen and (max-width: 660px) {
+
+#modal .modal-content {
+    max-width: 317px;
+    height: 520px;
+    margin-top: 20%;
+}
+
+
+#modal .modal-content button {
+    width: 212px; 
+}
+
+#modal .modal-content input {
+    width: 77%;
+}
+}
+/*End modal1*/
+
+
+
+/*start block1*/
+/*Start navigation*/
+.navbar{
+    background: #fff;
+    opacity: 0.95;
+}
+
+.nav-gift {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F43834;
+    margin-bottom: 0rem;
+}
+
+.nav-number {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #D14340;
+}
+
+.nav-link:hover{
+    background: #f4f4f4;
+    color: #f97300;
+}
+
+.navbar-contacts {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: flex-end;
+    color: #453F43;
+    margin: 20px;
+        display: flex;
+
+}
+
+.nav-item {
+    display: flex;
+}
+
+.navbar-collapse{
+    justify-content: space-around;
+
+}
+
+.navbar-toggler{
+    background:#fff;
+}
+
+/*End navigation*/
+
+.minipicback {
+    cursor: pointer;
+}
+
+
+
+/*slider*/
+
+.clients-slider {
+    max-width: 1018px;
+    height: 570px;
+    margin: 110px auto;
+    display: flex;
+}
+
+.clients-slider  .item {
+    height: 562px;
+    background: #FFA438;
+    margin-right:1px;
+    position: relative;
+    z-index: 50;
+     box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25), 0px 4px 35px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+.slick-prev {
+    height: 480px;
+    width: 40px;
+    color: transparent;
+    background-color: #F43834;
+    position: relative;
+    top: 7%;
+    content: url(./pictures/betman.png);
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    color: #fff;
+}
+
+.slick-next::after {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 36px;
+    background-color: #F43834;
+    position: absolute;
+    top: 230px;
+    content: url(./pictures/arrow2.png);
+
+}
+
+.slick-prev::after {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 38px;
+    background-color: #F43834;
+    position: absolute;
+    top: 230px;
+    content: url(./pictures/arrow1.png);
+}
+
+.slick-next {
+    height: 480px;
+    width: 40px;
+    color: transparent;
+    background-color: #F43834;
+    position: relative;
+    top: 7%;
+    content: "\2192";
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    color: #fff;
+}
+
+/*Endslider*/
+
+.allblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+.middleblock1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 126px;
+}
+
+.frendy1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 48px;
+    color: #444343;
+       margin-bottom: 24px;
+
+}
+
+.interestanddiscount {
+    display: flex;
+}
+
+.interest1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 52px;
+    color: #D2312E;
+        margin-right: 15px;
+}
+
+
+.discount1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 52px;
+    color: #FFFFFF;
+}
+
+.description1 {
+
+font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+margin: 1px 0px 31px;
+color: #4E4F53;
+}
+
+.orderbutton {
+padding: 13px 34px;
+    background: #CB2F2C;
+border-radius: 5px;
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+color: #FFFFFF;
+}
+
+.girl  {
+    left: 55px;
+    position: relative;
+}
+
+.penciltext1 {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: #444343;
+text-align: center;
+}
+
+.penciltext2 {
+font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 2px;
+color: #FFFFFF;
+text-align: center;
+}
+
+.plus{
+    margin: 12px 0px;
+}
+
+.leftblock1 {
+    margin: -28px;
+    left: 61px;
+    position: relative;
+        bottom: 9px;
+
+}
+/*endblock1*/
+
+/*block2*/
+
+.block2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperblock2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -25px;
+    margin-bottom: 33px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.1);
+}
+
+.giftandtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 69px;
+}
+
+
+.text1block2 {
+font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 40px;
+/* or 133% */
+
+text-align: center;
+
+color: #2E2E2E;
+    margin-top: 46px;
+
+}
+/*endblock2*/
+
+/*block3*/
+
+/*tabs*/
+.toggle1 {
+    display: flex;
+    flex-direction: column;
+        margin-bottom: 36px;
+
+}
+
+.toggle1 .tabs1 {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+
+}
+.toggle1 .tabs1 .tab1 {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: rgba(68, 67, 67, 0.75);
+        cursor: pointer;
+            position: relative;
+    top: -4px;
+}
+.toggle1 .tabs1 .tab1.active {
+    color: #F43834;
+    border-bottom: 3px solid #F43834;
+    margin-right: 40px;
+    margin-left: 40px;
+
+
+}
+.toggle1 .panels1 .panel1 {
+  padding: 20px 10px;
+  display: none;
+}
+.toggle1 .panels1 .panel1:first-child {
+  display: block;
+}
+
+/*endtabs*/
+
+/*slider2*/
+
+.textblock3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bagsblock {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 48px;
+    color: #444343;
+}
+
+.description1block {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #444343;
+    margin: 8px 0px;
+}
+
+section .block3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-slide .betman {
+left: 10px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.item1 {
+    text-align: center;
+}
+
+.betmantext1 {
+font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+color: #444343;
+margin: -11px 0px 4px;
+}
+
+.price1 {
+font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+color: #444343;
+}
+
+.orderbuttonmini {
+    padding: 7px 25px;
+        margin-bottom: 18px;
+        background: #CB2F2C;
+border-radius: 5px;
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #FFFFFF;
+}
+
+.discountphoto {
+    position: absolute;
+    width: 137px;
+    height: 136px;
+    bottom: -10px;
+        margin-left: 6px;
+
+}
+
+/*endblock3*/
+
+/*block4*/
+
+.clients-slider2 {
+    width: 1018px;
+    height: 570px;
+    margin: 110px auto;
+    display: flex;
+}
+
+
+
+.interestanddiscountblock4 {
+    display: flex;
+    margin-top: -2px;
+}
+
+.wrapper {
+    display: flex;
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.allblock2 {
+    display: flex;
+}
+
+.leftblock2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        margin-top: 55px;
+position: relative;
+    left: 36px;
+}
+
+.frendy1block4 {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 42px;
+line-height: 48px;
+
+color: #444343;
+}
+
+.discount1block4 {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 45px;
+line-height: 52px;
+color: #FFFFFF;
+}
+
+.interest1photo {
+    position: relative;
+    top: -40px;
+    left: 10px;
+}
+
+.discount1block4 {
+    position: relative;
+    top: 14px;
+}
+
+/*form*/
+
+.form {
+
+font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #3E3E3E;
+position: relative;
+bottom: 70px;
+
+
+}
+
+form, input {
+    font-size: 25px;
+}
+
+input {
+    background-color: #E6F0F9;
+    border-radius: 5px;
+    width: 354px;
+    height: 46px;
+    overflow: hidden;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+label {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+ .orderbuttonblock4 {
+     background: #CB2F2C;
+    border-radius: 5px;
+    color: #fff;
+    width: 352px;
+    height: 61px;
+ }
+
+ .bigbag1 {
+        top: 26px;
+    position: relative;
+left: 44px;
+}
+
+.logo1photo {
+ position: relative;
+    top: 25px;
+    right: 25px;
+}
+
+/*endblock4*/
+
+/*startblock5*/
+
+
+.wrapper1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.children {
+        position: relative;
+    left: 93px;
+    z-index: 0;
+}
+
+.rightblock5 {
+    background: #FFA438;
+    width: 588px;
+    height: 645px;
+        z-index: 1;
+            position: relative;
+
+    right: 192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        min-width: 560px;
+
+}
+
+.giveasmile1 {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 42px;
+line-height: 48px;
+    margin-bottom: 20px;
+color: #444343;
+}
+
+.description2 {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 25px;
+color: #4E4F53;
+text-align: center;
+    margin: 0px 0px 27px 0px;
+}
+
+.step1text {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 25px;
+
+color: #4E4F53;
+}
+
+.number1 {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 42px;
+line-height: 48px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+letter-spacing: 0.03em;
+color: #F43834;
+width: 55px;
+height: 55px;
+background: #FFFFFF;
+border-radius: 15px;
+    margin-right: 21px;
+
+}
+
+.numberandstep1 {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.logo2photo {
+    position: relative;
+    left: 244px;
+    top: 211px;
+    z-index: 2;
+}
+
+/*endblock5*/
+
+/*startblock6*/
+
+
+/*tabs*/
+.toggle2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+
+.toggle2 .tabs2 {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+
+}
+.toggle2 .tabs2 .tab2 {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: rgba(68, 67, 67, 0.75);
+        cursor: pointer;
+            position: relative;
+    top: -4px;
+}
+.toggle2 .tabs2 .tab2.active {
+    color: #F43834;
+    border-bottom: 3px solid #F43834;
+    margin-right: 40px;
+    margin-left: 40px;
+
+
+}
+.toggle2 .panels2 .panel2 {
+  padding: 20px 10px;
+  display: none;
+}
+.toggle2 .panels2 .panel2:first-child {
+  display: block;
+}
+
+/*endtabs*/
+
+/*endblock6*/
+
+/*startblock7*/
+
+
+.clients-slider2 {
+    width: 1018px;
+    height: 570px;
+    margin: 110px auto;
+    display: flex;
+}
+
+.clients-slider2  .item2 {
+    height: 562px;
+    background: #FFA438;
+    margin-right:1px;
+    position: relative;
+     box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25), 0px 4px 35px rgba(0, 0, 0, 0.25);
+
+}
+
+.interestanddiscountblock4 {
+    display: flex;
+    margin-top: -2px;
+        margin: 14px 0px;
+
+}
+
+.wrapper {
+    display: flex;
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.allblock2 {
+    display: flex;
+}
+
+.leftblock2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+position: relative;
+    left: 36px;
+}
+
+.frendy1block4 {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 42px;
+line-height: 48px;
+
+color: #444343;
+}
+
+.discount1block4 {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 45px;
+line-height: 52px;
+color: #FFFFFF;
+    position: relative;
+    top: 14px;
+    right: 13px;
+}
+
+.interest1photo {
+    position: relative;
+    top: -40px;
+    left: 10px;
+}
+
+
+/*form*/
+
+.form {
+
+font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #3E3E3E;
+position: relative;
+bottom: 70px;
+
+
+}
+
+form, input {
+    font-size: 25px;
+}
+
+input {
+    background-color: #E6F0F9;
+    border-radius: 5px;
+    width: 354px;
+    height: 46px;
+    overflow: hidden;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+label {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+ .orderbuttonblock4 {
+     background: #CB2F2C;
+    border-radius: 5px;
+    color: #fff;
+    width: 352px;
+    height: 61px;
+ }
+
+ .bigbag1 {
+        top: 26px;
+    position: relative;
+left: 44px;
+}
+
+.logo1photo {
+ position: relative;
+    top: 25px;
+    right: 25px;
+}
+
+/*endblock7*/
+
+/*startblock8*/
+.block7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        margin-bottom: 110px;
+
+}
+
+.l-constrain {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+
+
+.slider {
+  display: flex;
+}
+
+.slider__circle {
+  background-color: #e8e8e8;
+  background-image:url(./pictures/rosepic.png);
+  background-size: cover;
+  background-position: center center;
+      width: 376px;
+
+  height: 367px;
+    position: relative;
+    display: block;
+  border-radius: 71% 29% 70% 30% / 30% 30% 70% 70%;
+  transition: all 500ms ease-out;
+}
+
+
+.slider__items {
+  width: calc(100% - 300px - 2rem);
+    left: calc(300px + -15rem);
+      position: relative;
+          top: 47px;
+
+}
+
+.slide {
+  
+}
+
+.slide__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide__content {
+  color: #333;
+  position: relative;
+
+}
+
+.lineandname {
+    display: flex;
+}
+
+.line {
+    position: relative;
+    top: 13px;
+        margin-left: 25px;
+
+}
+
+.slide__title {
+  font-family: Ubuntu;
+font-style: italic;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+color: #4E4F53;
+    margin-left: 20px;
+
+}
+
+.present {
+font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+color: #4E4F53;
+}
+
+.textblock7 {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 24px;
+border-left: 2px solid #FFA438;
+    padding-left: 24px;
+    margin-top: 26px;
+    margin-bottom: 30px;
+color: #4E4F53;
+}
+
+.readmore{
+
+font-family: Ubuntu;
+font-style: italic;
+font-weight: bold;
+font-size: 14px;
+line-height: 24px;
+text-decoration-line: underline;
+}
+
+.title1 {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 42px;
+line-height: 48px;
+color: #444343;
+text-align: center;
+    margin-bottom: 21px;
+}
+
+@keyframes bigCircle {
+  0%   {
+    border-radius: 71% 29% 70% 30% / 30% 30% 70% 70%;
+    left: 0;
+    top: 0;
+  }
+  25%  {
+    border-radius: 40% 60% 44% 56% / 25% 41% 59% 75%;
+    left: 2rem;
+    top: -2rem;
+  }
+  50% {
+    border-radius: 40% 60% 44% 56% / 61% 71% 29% 39%;
+    left: 1rem;
+    top: -.5rem;
+  }
+  75%  {
+    border-radius: 77% 23% 44% 56% / 31% 33% 67% 69%;
+    left: 3rem;
+    top: -1rem;
+  }
+  100%  {
+    border-radius: 71% 29% 70% 30% / 30% 30% 70% 70%;
+    left: 0;
+    top: 0;
+  }
+}
+/*endblock8*/
+
+/*startblock9*/
+/*newTabs1*/
+
+.tabs-place { 
+    width: 339px;
+    height: 122px; 
+    padding-top: 0px; 
+    margin: 70px auto -3px; 
+    position: relative; 
+} 
+
+.test { 
+    display: none;  
+    background: white; 
+    position: absolute; 
+    top: -89px;
+    left: 60px; 
+} 
+
+.tabs-place input { 
+    display: none; 
+} 
+
+.tabs-place label { 
+    display: block; 
+    width: 55px; 
+    height: 55px;
+    color: #4F5966;
+    background: #fff; 
+    margin-bottom: 30px;
+} 
+
+button {
+    cursor: pointer; 
+}
+
+input:checked + label { 
+border: 1px solid red;
+border-radius: 10px;
+} 
+
+.minipicback {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#tab1block1:checked ~ #content1block1, #tab2block1:checked ~ #content2block1, #tab3block1:checked ~ #content3block1, #tab4block1:checked ~ #content4block1 { 
+    display: block; 
+} 
+
+
+.test { 
+    animation: scale 0.7s ease-in-out; 
+} 
+
+@keyframes scale { 
+  0% { 
+  transform: scale(0.9); 
+  opacity: 0; 
+  } 
+  50% { 
+  transform: scale(1.005); 
+  opacity: 0.5; 
+  } 
+  100% { 
+  transform: scale(1); 
+  opacity: 1; 
+  } 
+}
+
+/*endtabs*/
+
+.wrapper2 {
+    display: flex;
+}
+
+.tabs-place {
+    position: relative;
+    top: 30px;
+}
+
+.container {
+    display: flex;
+}
+
+.rightblock8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+            
+}
+ 
+
+
+.frendy1block8 {
+font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 42px;
+line-height: 48px;
+
+color: #444343;
+}
+
+.discount1block8 {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: bold;
+font-size: 45px;
+line-height: 52px;
+/* identical to box height */
+color: #CB2F2C;
+    position: relative;
+    top: 14px;
+}
+
+/*endblock9*/
+
+/*startblock10*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EEEEEE;
+}
+
+.infa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 18px;
+    width: 78%;
+
+}
+
+.address {
+    display: flex;
+}
+
+.mobiletel {
+    display: flex;
+}
+
+
+
+.onmap {
+    
+    margin: -4px 8px;
+}
+
+.telnum {
+        margin: -4px 8px;
+}
+
+
+
+
+.telef, .onmaptext {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+letter-spacing: 0.03em;
+
+color: #464646;
+}
+
+
+
+.conferential {
+    font-family: Ubuntu;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+text-decoration-line: underline;
+
+color: #1493C4;
+
+opacity: 0.87;
+    margin-bottom: 41px;
+    margin-top: 10px;
+
+}
+
+/*endblock10*/
+
+
+
+
+
+
+/*Adaptability*/
+
+
+@media screen and (max-width: 1500px) {
+.discountphoto {
+    
+    margin-left: -36px;
+}
+}
+
+
+@media screen and (max-width: 1300px) {
+.rightblock8 {
+    
+    position: relative;
+    left: 31px;
+}
+}
+
+@media screen and (max-width: 1160px) {
+
+    .allblock {
+    padding: 30px 6px;
+}
+.discountphoto {
+    margin-left: -46px;
+}
+
+.rightblock5 {
+    right: 228px;
+}
+
+.boy3 {
+    width: 418px;
+    height: 450px;
+    top: 10px;
+    position: relative;
+}
+
+.girl3 {
+    width: 350px;
+    height: 487px;
+}
+
+.text1block2 {
+    
+
+    width: 150%;
+    position: relative;
+    right: 61px;
+}
+}
+
+
+@media screen and (max-width: 1025px) and (min-width: 991) {
+.rightblock8 {
+    left: 118px;
+}
+
+.rightblock8 {
+    position: relative;
+    left: 211px;
+}
+}
+
+@media screen and (max-width: 1025px)  {
+.nav-gift {
+    display: none;
+    }
+
+.nav-item {
+    display: none;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-number {
+    position: relative;
+    left: 174px;
+}
+
+.logo {
+    position: relative;
+    left: 65px;
+}
+
+
+
+.wrapperblock2 {
+    max-width: 925px;
+}
+
+.girl3 {
+    width: 300px;
+    height: 400px;
+}
+
+.boy3 {
+    width: 327px;
+    height: 378px;
+
+}
+
+
+.logo1photo {
+    
+    right: 49px;
+}
+
+.clients-slider2{
+    max-width: 925px;
+    
+}
+
+.rightblock5 {
+    right: 179px;
+}
+
+.children {
+    position: relative;
+    left: 131px;
+    width: 627px;
+}
+
+.logo2photo {
+    position: relative;
+    left: 234px;
+    top: 161px;
+    z-index: 2;
+}
+
+.discountphoto {
+    margin-left: -16px;
+}
+
+.slider__items {
+    left: calc(300px + -18rem);
+
+}
+
+.slider {
+    position: relative;
+    left: 18px;
+}
+
+.discount1block4 {
+    font-size: 39px;
+}
+
+}
+
+@media screen and (max-width: 991px) {
+.rightblock8 {
+    position: relative;
+    left: 198px;
+}
+
+.container {
+    right: 81px;
+    position: relative;
+}
+}
+
+
+@media screen and (max-width: 991px) and (min-width: 925) {
+
+.rightblock8 {
+    position: relative;
+    left: 197px;
+}
+}
+
+
+@media screen and (max-width: 925px) {
+.middleblock1 {
+        display: none;
+}
+
+.gift1 {
+    width: 150px;
+    height: 150px;
+}
+
+.text1block2 {
+        right: 35px;
+    font-size: 16px;
+    line-height: 29px;
+
+}
+
+.giftandtext{
+    position: relative;
+    top: 20px;
+}
+
+.bigbag1 {
+        width: 400px;
+    height: 450px;
+    top: 63px;
+    left: -5px;
+
+}
+
+.clients-slider2 {
+    max-width: 750px;
+}
+
+.logo1photo {
+    right: 90px;
+}
+
+.rightblock5{
+        min-width: 450px;
+}
+
+.children {
+    position: relative;
+    left: 98px;
+    width: 563px;
+}
+
+.logo2photo {
+    left: 198px;
+    top: 130px;
+}
+
+.slider {
+    position: relative;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    justify-content: center;
+    align-items: center;
+        top: 20px;
+
+}
+
+.l-constrain {
+    
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.wrapperblock2 {
+    max-width: 715px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightblock8 {
+    left: 59px;
+    margin-top: 285px;
+}
+}
+
+@media screen and (max-width: 760px) {
+.wrapperblock2 {
+    max-width: 570px;
+}
+
+.description1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 1px 0px 31px;
+    color: #4E4F53;
+    text-align: center;
+}
+
+.frendy1 {
+    line-height: 33px;
+    text-align: center;
+}
+
+.leftblock1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.interest1 {
+    font-size: 22px;
+}
+
+.discount1{
+    font-size: 22px;
+}
+
+.frendy1 {
+    font-size: 21px;
+        margin-bottom: -1px;
+}
+
+.girl3 {
+    width: 200px;
+    height: 213px;
+}
+
+.boy3 {
+    width: 200px;
+    height: 200px;
+}
+
+.text1block2 {
+        right: 46px;
+    font-size: 14px;
+    margin-top: -1px;
+
+}
+
+.gift1 {
+    width: 125px;
+    height: 125px;
+}
+
+.clients-slider2 {
+    width: 570px;
+}
+
+.frendy1block4 {
+        font-size: 33px;
+
+} 
+
+.interest1photo {
+    width: 110px;
+    height: 110px;
+}
+
+.discount1block4 {
+    font-size: 30px;
+    top: -11px;
+}
+
+form, input {
+    font-size: 19px;
+    width: 277px;
+}
+
+.orderbuttonblock4 {
+    width: 277px;
+}
+
+.bigbag1 {
+    width: 291px;
+    height: 330px;
+    top: 164px;
+    left: -5px;
+}
+
+.rightblock5 {
+    right: 9px;
+}
+
+.logo2photo {
+display: none;
+}
+
+ .children {
+    
+    display: none;
+}
+
+.l-constrain {
+    max-width: 550px;
+    
+}
+
+.container {
+    right: 51px;
+    position: relative;
+}
+
+.discount1block8 {
+ 
+    top: -12px;
+}
+
+   .rightblock8 {
+    left: 59px;
+    margin-top: 315px;
+}
+
+.logo1 {
+    display: none;
+}
+
+.telef, .onmaptext {
+
+    font-size: 13px;
+ 
+}
+
+.phototab1 {
+    width: 420px;
+    height: 450px;
+}
+
+.nav-number {
+    position: relative;
+    left: 119px;
+}
+
+
+}
+
+@media screen and (max-width: 564px) {
+.slick-slide img {
+    display: none;
+}
+
+.clients-slider {
+    min-width: 320px
+}
+
+.leftblock1 {
+    margin: 0px;
+    left: 2px;
+    position: relative;
+    bottom: -4px;
+}
+
+.description1 {
+
+    text-align: center;
+}
+
+.logo {
+    display: none;
+}
+
+.nav-number {
+    position: relative;
+    left: 4px;
+}
+
+
+.frendy1 {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.allblock {
+    
+    padding: 70px 33px;
+}
+
+.text1block2 {
+    font-size: 10px;
+        line-height: 29px;
+    right: 30px;
+
+}
+
+.gift1 {
+    width: 100px;
+    height: 100px;
+}
+
+.boy3 {
+
+    display: none;
+}
+
+.girl3 {
+    width: 181px;
+    height: 213px;
+}
+
+.giftandtext {
+    right: 33px;
+}
+
+.interest1photo {
+    display: none;
+}
+
+.discount1block4 {
+    display: none;
+}
+
+.form {
+        top: 20px;
+
+}
+
+.clients-slider2 {
+    width: 320px;
+}
+
+.leftblock2 {
+    
+    left: 27px;
+}
+
+.giveasmile1 {
+    font-size: 28px;
+}
+
+.description2text {
+    font-size: 15px;
+}
+
+.step1text {
+    font-size: 16px;
+}
+
+.rightblock5 {
+    min-width: 320px;
+        right: 0px;
+    top: -67px;
+}
+
+
+.frendy1block4 {
+    font-size: 33px;
+    text-align: center;
+}
+
+.wrapper1 {
+    margin-bottom: -6px;
+}
+
+.block7 {
+    display: none;
+}
+
+.phototab1 {
+    width: 290px;
+    height: 341px;
+    position: relative;
+    top: 66px;
+    width: 243px;
+    height: 294px;
+}
+
+.container {
+    position: relative;
+    right: -25px;
+    bottom: 110px;
+    right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.rightblock8 {
+    left: 0px;
+    margin-top: 253px;
+}
+
+.frendy1block8 {
+text-align: center;
+    font-size: 31px;
+
+}
+
+.interest1photo {
+    display: none;
+}
+
+.discount1block8 {
+    display: none;
+}
+
+.infa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobiletel {
+    margin: 10px 0px;
+}
+
+}
